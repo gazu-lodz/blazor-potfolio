@@ -13,16 +13,14 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.0.x' # Jeśli używasz .NET 7, wpisz '7.0.x'
+        dotnet-version: '10.0.x'
 
     - name: Publish Blazor Project
       run: dotnet publish -c Release -o release --nologo
 
-    # Rozwiązuje problem GitHub Pages ignorującego foldery zaczynające się od "_" (jak _framework w Blazorze)
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
 
-    # Rozwiązuje problem błędu 404 przy odświeżaniu podstrony (np. /radar)
     - name: Copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
 
