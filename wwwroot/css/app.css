@@ -1,0 +1,191 @@
+/* Baza */
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.mt-5 { margin-top: 4rem; }
+.text-center { text-align: center; }
+
+/* Układ główny */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-navbar {
+    background-color: rgba(22, 27, 34, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #30363d;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links { display: flex; gap: 2rem; }
+
+.nav-links .nav-link {
+    color: #8b949e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links .nav-link:hover, .nav-links .nav-link.active {
+    color: #58a6ff;
+}
+
+.content-container {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Sekcja Hero (powitalna) */
+.hero-section {
+    padding: 2rem 0;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #58a6ff, #9e6cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8b949e;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+}
+
+/* Kafelki z umiejętnościami (Grid + Cards) */
+.section-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.section-desc {
+    color: #8b949e;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 24px rgba(88, 166, 255, 0.15);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-desc {
+    color: #8b949e;
+    font-size: 0.95rem;
+}
+
+/* Sekcja CTA i Przycisk Glow */
+.cta-section {
+    background: linear-gradient(145deg, #161b22, #0d1117);
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: center;
+}
+
+.cta-button-container {
+    margin-top: 2rem;
+}
+
+.btn-glow {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #238636;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn-glow:hover {
+    background: #2ea043;
+    box-shadow: 0 0 15px rgba(46, 160, 67, 0.4);
+    color: #ffffff;
+}
+
+/* Stopka */
+.footer {
+    text-align: center;
+    padding: 2.5rem;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    font-size: 0.9rem;
+}
+
+#blazor-error-ui { display: none !important; }

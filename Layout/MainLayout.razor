@@ -1,0 +1,21 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page-wrapper">
+    <header class="top-navbar">
+        <div class="nav-container">
+            <a class="brand" href="">Portfolio</a>
+            <nav class="nav-links">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">O mnie</NavLink>
+                <NavLink class="nav-link" href="radar">Volatility Radar</NavLink>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-container">
+        @Body
+    </main>
+    
+    <footer class="footer">
+        &copy; @DateTime.Now.Year - Cyprian Pyka. Wszelkie prawa zastrzeżone. Projekt zbudowany w Blazor WebAssembly.
+    </footer>
+</div>

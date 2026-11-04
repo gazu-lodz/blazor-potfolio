@@ -1,0 +1,65 @@
+﻿@page "/"
+
+<PageTitle>Cyprian Pyka - Portfolio</PageTitle>
+
+<div class="hero-section">
+    <h1 class="hero-title">Witaj, jestem <span class="highlight">Cyprian</span>.</h1>
+    <h2 class="hero-subtitle">Student informatyki, pasjonat kodu, początkujący analityk.</h2>
+    <p class="hero-text">
+        Obecnie zgłębiam tajniki inżynierii oprogramowania i architektury systemów w szkole informatycznej. 
+        Wierzę, że sucha teoria to tylko fundament – to, co naprawdę buduje inżyniera, to godziny spędzone w edytorze kodu. 
+        Dlatego każdą wolną chwilę poświęcam na realizację własnych projektów dorywczych, dzięki którym zdobywam 
+        praktyczne doświadczenie i poznaję najnowsze technologie.
+    </p>
+    <p class="hero-text">
+        Nie jestem weteranem z dekadą doświadczenia komercyjnego, ale nadrabiam to ogromnym zaangażowaniem, 
+        świeżym spojrzeniem i głodem wiedzy. Uwielbiam rozwiązywać złożone problemy i budować aplikacje, 
+        które mają realne zastosowanie – od skryptów analizujących dane po nowoczesne interfejsy webowe.
+    </p>
+</div>
+
+<div class="skills-section mt-5">
+    <h3 class="section-title">Co mam w swoim warsztacie?</h3>
+    <p class="section-desc">Eksploruję różne dziedziny IT, aby zrozumieć pełny cykl życia aplikacji. Oto technologie, z którymi pracuję na co dzień:</p>
+
+    <div class="skills-grid">
+        @foreach (var skill in MySkills)
+        {
+            <div class="skill-card">
+                <div class="skill-icon">@skill.Icon</div>
+                <h4 class="skill-name">@skill.Name</h4>
+                <p class="skill-desc">@skill.Description</p>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="cta-section mt-5">
+    <h3 class="section-title">Sprawdź mój kod w akcji</h3>
+    <p class="hero-text text-center">
+        Jeden z moich najnowszych projektów to <strong>Crypto Volatility Radar</strong>. Jest to aplikacja napisana w Pythonie 
+        (z użyciem biblioteki Streamlit), która w czasie rzeczywistym analizuje zmienność na rynkach kryptowalut. 
+        Projekt ten świetnie oddaje moje zainteresowania na styku programowania, analizy danych i rynków finansowych.
+    </p>
+    <div class="cta-button-container">
+        <a href="radar" class="btn-glow">Przejdź do projektu Radar</a>
+    </div>
+</div>
+
+@code {
+    // Prosta lista C# używana w Blazorze do renderowania HTML-a
+    private List<SkillItem> MySkills = new()
+    {
+        new SkillItem { Icon = "🐍", Name = "Python & Dane", Description = "Analiza danych, Pandas, automatyzacja i budowa dashboardów analitycznych (Streamlit)." },
+        new SkillItem { Icon = "⚙️", Name = "C# & .NET", Description = "Podstawy programowania obiektowego, budowanie aplikacji z użyciem frameworka Blazor." },
+        new SkillItem { Icon = "🗄️", Name = "Bazy danych SQL", Description = "Projektowanie relacyjnych baz danych, pisanie zapytań, łączenie danych z aplikacjami." },
+        new SkillItem { Icon = "💻", Name = "Narzędzia IT", Description = "Git, GitHub, praca w terminalu oraz środowiska IDE jak Visual Studio i VS Code." }
+    };
+
+    public class SkillItem
+    {
+        public string Icon { get; set; } = "";
+        public string Name { get; set; } = "";
+        public string Description { get; set; } = "";
+    }
+}
