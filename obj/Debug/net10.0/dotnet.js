@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "CryptoPortfolio",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-xrDOp1R4Wwn6OYL7RYTzu2uJaUGSo+kGFz3VPWSYi9c=",
+    "hash": "sha256-aoOWRIx4lHN0rytChkKOVjoDDadA7bbuPYTMiDqB5W8=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.bjoj0wmylw.js"
@@ -1242,16 +1242,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "CryptoPortfolio.wasm",
-        "name": "CryptoPortfolio.8v2udxxoeo.wasm",
-        "hash": "sha256-BMvmf1btOihhjvOoETGDQQBTQ8LJtivCuEyIWbr5540=",
+        "name": "CryptoPortfolio.iaexkyu7lt.wasm",
+        "hash": "sha256-Zj19h9BYnIrdMzIR75b/EX666dXFMwmHriW0o0rmoyU=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "CryptoPortfolio.pdb",
-        "name": "CryptoPortfolio.fobidm3og3.pdb",
-        "hash": "sha256-YX8MpVPXIkeUk+brxz90CNFosGhFmdhFpOo7cr6qQcA=",
+        "name": "CryptoPortfolio.sb436hk2b4.pdb",
+        "hash": "sha256-WF1qJG7z10at6XXRG7Ss46QXJ//MXxPMon6nXwo9H00=",
         "cache": "force-cache"
       }
     ],

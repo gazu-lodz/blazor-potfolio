@@ -3,41 +3,56 @@
 
 <PageTitle>Cyprian Pyka - Portfolio</PageTitle>
 
-<div class="hero-section">
-    <h1 class="hero-title" data-aos="fade-down">Witaj, jestem <span class="highlight">Cyprian</span>.</h1>
-    <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">Student informatyki, pasjonat kodu, początkujący analityk.</h2>
-    <p class="hero-text" data-aos="fade-up" data-aos-delay="200">
-        Obecnie zgłębiam tajniki inżynierii oprogramowania i architektury systemów w szkole informatycznej. 
-        Wierzę, że sucha teoria to tylko fundament – to, co naprawdę buduje inżyniera, to godziny spędzone w edytorze kodu. 
-        Dlatego każdą wolną chwilę poświęcam na realizację własnych projektów dorywczych, dzięki którym zdobywam 
-        praktyczne doświadczenie i poznaję najnowsze technologie.
-    </p>
-    <p class="hero-text" data-aos="fade-up" data-aos-delay="300">
-        Nie jestem weteranem z dekadą doświadczenia komercyjnego, ale nadrabiam to ogromnym zaangażowaniem, 
-        świeżym spojrzeniem i głodem wiedzy. Uwielbiam rozwiązywać złożone problemy i budować aplikacje, 
-        które mają realne zastosowanie – od skryptów analizujących dane po nowoczesne interfejsy webowe.
-    </p>
-</div>
+<div class="hero-wrapper">
+    <!-- Kolumna lewa -->
+    <div class="welcome-module">
+        <div class="welcome-content" data-aos="fade-down" style="color: #fdfdfd;">
+            <h2>Witaj, jestem <span class="highlight">Cyprian</span>.</h2>
+            <p>Student informatyki, pasjonat kodu, początkujący analityk.</p>
+            <a href="kontakt" class="btn-dark">Skontaktuj się</a>
+        </div>
+    </div>
 
-<div class="skills-section mt-5">
-    <h3 class="section-title" data-aos="fade-right">Co mam w swoim warsztacie?</h3>
-    <p class="section-desc" data-aos="fade-right" data-aos-delay="100">Eksploruję różne dziedziny IT, aby zrozumieć pełny cykl życia aplikacji. Oto technologie, z którymi pracuję na co dzień:</p>
-
-    <div class="skills-grid">
-        @{ var delay = 0; }
-        @foreach (var skill in MySkills)
-        {
-            <div class="skill-card" data-aos="zoom-in" data-aos-delay="@delay">
-                <div class="skill-icon">@skill.Icon</div>
-                <h4 class="skill-name">@skill.Name</h4>
-                <p class="skill-desc">@skill.Description</p>
-            </div>
-            delay += 150;
-        }
+    <!-- Kolumna prawa -->
+    <div class="hero-text-content" data-aos="fade-left" data-aos-delay="200">
+        <p class="hero-text">
+            Obecnie zgłębiam tajniki inżynierii oprogramowania i architektury systemów w szkole informatycznej. 
+            Wierzę, że sucha teoria to tylko fundament - to, co naprawdę buduje inżyniera, to godziny spędzone w edytorze kodu. 
+            Dlatego każdą wolną chwilę poświęcam na realizację własnych projektów dorywczych, dzięki którym zdobywam 
+            praktyczne doświadczenie i poznaję najnowsze technologie.
+        </p>
+        <p class="hero-text">
+            Nie jestem weteranem z dekadą doświadczenia komercyjnego, ale nadrabiam to ogromnym zaangażowaniem, 
+            świeżym spojrzeniem i głodem wiedzy. Uwielbiam rozwiązywać złożone problemy i budować aplikacje, 
+            które mają realne zastosowanie - od skryptów analizujących dane po nowoczesne interfejsy webowe.
+        </p>
     </div>
 </div>
 
-<div class="cta-section mt-5" data-aos="fade-up" data-aos-offset="150">
+
+
+<div class="section-bg-light">
+    <!-- Dodana klasa container-inner do środkowania treści -->
+    <div class="skills-section mt-5 container-inner">
+        <h3 class="section-title" data-aos="fade-right" style="color: #fdfdfd;">Co mam w swoim warsztacie?</h3>
+        <p class="section-desc" data-aos="fade-right" data-aos-delay="100" style="color: #e9e9e9;">Eksploruję różne dziedziny IT, aby zrozumieć pełny cykl życia aplikacji. Oto technologie, z którymi pracuję na co dzień:</p>
+
+        <div class="skills-grid">
+            @{ var delay = 0; }
+            @foreach (var skill in MySkills)
+            {
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="@delay">
+                    <div class="skill-icon">@skill.Icon</div>
+                    <h4 class="skill-name">@skill.Name</h4>
+                    <p class="skill-desc">@skill.Description</p>
+                </div>
+                delay += 150;
+            }
+        </div>
+    </div>
+</div>
+
+<div class="cta-section mt-5 container-inner" data-aos="fade-up" data-aos-offset="150">
     <h3 class="section-title">Sprawdź mój kod w akcji</h3>
     <p class="hero-text text-center">
         Jeden z moich najnowszych projektów to <strong>Crypto Volatility Radar</strong>. Jest to aplikacja napisana w Pythonie 

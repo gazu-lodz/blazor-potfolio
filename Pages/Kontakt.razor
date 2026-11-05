@@ -1,0 +1,54 @@
+@page "/kontakt"
+
+<PageTitle>Kontakt - Cyprian Pyka</PageTitle>
+
+<div class="contact-container">
+    <div class="contact-info">
+        <h1 class="contact-header">Chcesz się skontaktować?</h1>
+        <p class="contact-text">Dziękuję za zainteresowanie moją stroną. Jeśli masz jakieś pytania o projekt, lub jesteś zainteresowany moją pracą, proszę o kontakt.</p>
+        
+        <div class="contact-details">
+            <div class="detail-item">
+                <span class="detail-title">E-mail:</span>
+                <span class="detail-value">cyprian.pyka@wp.pl</span>
+            </div>
+            
+            <div class="detail-item">
+                <span class="detail-title">Telefon:</span>
+                <span class="detail-value">+48 505 274 925</span>
+            </div>
+            
+            <div class="detail-item">
+                <span class="detail-title">Lokalizacja:</span>
+                <span class="detail-value">Łódź, Polska</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form-wrapper">
+        <!-- Zmień adres w 'action' po rejestracji na formspree.io -->
+        <form action="https://formspree.io/f/meaadzba" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Numer kontaktowy (opcjonalnie)</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Wiadomość</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-dark">Wyślij wiadomość</button>
+        </form>
+    </div>
+</div>
