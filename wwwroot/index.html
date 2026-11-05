@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CryptoPortfolio</title>
     <base href="/blazor-portfolio/" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preload" id="webassembly" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
@@ -29,6 +30,16 @@
         <span class="dismiss">🗙</span>
     </div>
     <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    window.initAOS = () => {
+        AOS.init({
+            duration: 800, // czas trwania animacji w milisekundach
+            once: true,    // true oznacza, że animacja wykona się tylko raz (przy pierwszym scrollu)
+            offset: 120    // ile pikseli przed krawędzią ekranu ma odpalić się efekt
+        });
+    };
+    </script>
 </body>
 
 </html>
