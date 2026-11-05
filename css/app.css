@@ -67,36 +67,10 @@ body {
     box-sizing: border-box;
 }
 
-/* Sekcja Hero (powitalna) */
-.hero-section {
-    padding: 2rem 0;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
 .highlight {
     background: linear-gradient(90deg, #58a6ff, #9e6cff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #8b949e;
-    margin-bottom: 2rem;
-}
-
-.hero-text {
-    font-size: 1.1rem;
-    color: #c9d1d9;
-    margin-bottom: 1.5rem;
-    max-width: 800px;
 }
 
 /* Kafelki z umiejętnościami (Grid + Cards) */
@@ -177,6 +151,168 @@ body {
     background: #2ea043;
     box-shadow: 0 0 15px rgba(46, 160, 67, 0.4);
     color: #ffffff;
+}
+
+
+.hero-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.welcome-module {
+    flex: 1; 
+    margin: 0; 
+    max-width: 500px;
+}
+
+.hero-text-content {
+    flex: 1;
+    text-align: left; 
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .hero-wrapper {
+        flex-direction: column;
+    }
+    .welcome-module {
+        max-width: 100%;
+    }
+}
+    
+
+.welcome-content {
+    background-color: #4b555f; 
+    padding: 40px;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px; 
+}
+
+.welcome-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fdfdfd;
+}
+
+.welcome-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #d8d8d8;
+}
+
+.btn-dark {
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-item {
+    font-size: 1.1rem;
+}
+
+.detail-title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contact-form-wrapper {
+    flex: 1;
+    background-color: #f4f4f4; 
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+.section-bg-light {
+    background-color: #4b555f; 
+    padding: 60px 0; 
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Stopka */
