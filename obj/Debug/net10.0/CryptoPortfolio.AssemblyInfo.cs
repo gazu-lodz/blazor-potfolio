@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CryptoPortfolio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23f0478b8c55df1ce4f12e1c84283468d97aed66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7917e8f813a8d81ded9bc830d691c6fdf2a0e58")]
 [assembly: System.Reflection.AssemblyProductAttribute("CryptoPortfolio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CryptoPortfolio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
