@@ -29,12 +29,13 @@ body {
 }
 
 .nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    background: rgba(13, 17, 23, 0.7); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); /* Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
 }
 
 .brand {
@@ -83,6 +84,7 @@ body {
 .section-desc {
     color: #8b949e;
     margin-bottom: 2rem;
+    line-height: 1.7;
 }
 
 .skills-grid {
@@ -178,7 +180,7 @@ body {
     font-size: 1.1rem;
     color: #c9d1d9;
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 @media (max-width: 900px) {
@@ -323,5 +325,7 @@ body {
     border-top: 1px solid #30363d;
     font-size: 0.9rem;
 }
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
 #blazor-error-ui { display: none !important; }

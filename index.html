@@ -7,7 +7,7 @@
     <title>CryptoPortfolio</title>
     <base href="/blazor-potfolio/" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="_framework/dotnet.lrr5ucyovk.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-LzbGwTE5iBqBUixTaUAPRRnZXy8HKgG9zw4GM1ouZMs=" />
+    <link href="_framework/dotnet.scomclcghg.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-zOSs0ZEZypZMI9QS/oZZ59RYX4ooExaIdloDKQe+Dl4=" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -15,31 +15,30 @@
     <script type="importmap">{
   "imports": {
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.lrr5ucyovk.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.bjoj0wmylw.js",
-    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.5nc8i5dl74.js"
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.5nc8i5dl74.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.scomclcghg.js"
   },
   "scopes": {},
   "integrity": {
     "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
     "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
-    "./_framework/dotnet.js": "sha256-LzbGwTE5iBqBUixTaUAPRRnZXy8HKgG9zw4GM1ouZMs=",
-    "./_framework/dotnet.lrr5ucyovk.js": "sha256-LzbGwTE5iBqBUixTaUAPRRnZXy8HKgG9zw4GM1ouZMs=",
+    "./_framework/dotnet.js": "sha256-zOSs0ZEZypZMI9QS/oZZ59RYX4ooExaIdloDKQe+Dl4=",
     "./_framework/dotnet.native.bjoj0wmylw.js": "sha256-CZ0IVZkLTIvee7n1yVvOitlJWNdj/YjaFgpMgliIM64=",
     "./_framework/dotnet.native.js": "sha256-CZ0IVZkLTIvee7n1yVvOitlJWNdj/YjaFgpMgliIM64=",
     "./_framework/dotnet.runtime.5nc8i5dl74.js": "sha256-/3dBg9sj1yLD3h0PDMHnNUXWs/2zWwIMEzom1Xz3Q40=",
-    "./_framework/dotnet.runtime.js": "sha256-/3dBg9sj1yLD3h0PDMHnNUXWs/2zWwIMEzom1Xz3Q40="
+    "./_framework/dotnet.runtime.js": "sha256-/3dBg9sj1yLD3h0PDMHnNUXWs/2zWwIMEzom1Xz3Q40=",
+    "./_framework/dotnet.scomclcghg.js": "sha256-zOSs0ZEZypZMI9QS/oZZ59RYX4ooExaIdloDKQe+Dl4="
   }
 }</script>
 </head>
 
 <body>
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #0d1117; color: #f4f4f4; font-family: sans-serif;">
+        <div class="spinner" style="width: 40px; height: 40px; border: 3px solid rgba(255,255,255,0.1); border-radius: 50%; border-top-color: #58a6ff; animation: spin 1s ease-in-out infinite;"></div>
+        <p style="margin-top: 20px; font-size: 0.9rem; letter-spacing: 1px;">Ładowanie środowiska...</p>
+      </div>
     </div>
 
     <div id="blazor-error-ui">
